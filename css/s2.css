@@ -1,0 +1,180 @@
+html{
+	background:black ;
+	justify-content: flex-start;
+    align-items: center;
+    font-family: Nunito,Helvetica,Arial,"sans-serif";
+    
+}
+body{
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+	color: #4e78ac;
+	display: block;
+    width: 100%;
+    /*padding: 0 2rem*/
+}
+h2{
+	text-align: center;
+	color: #285c9c;
+}
+h3{
+	color: #1f4b80;
+}
+nav:link{
+	color:  #9fc3d3;
+	text-decoration: none;
+}
+a{
+	color:#9fc3d3 ;
+	text-decoration: none;
+}
+
+main{
+		color: white;
+		text-align: justify;
+	    font-family: Georgia, serif;
+	    line-height:150%;
+	    text-indent:5px;
+	    background-color:#131313;
+	    padding: 1%;
+	    border-radius: 2%;
+	    margin-left: 15%;
+		margin-right: 15%;
+}
+video{
+	width: 90%;
+	justify-content: center;
+	margin-left: 5%;
+}
+img{
+	align-items: center;
+	display: flex;
+	width: 13%;
+	margin-left: 12%;
+}
+.navaspect div{
+	padding: 0.8%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #2a2a2a;
+	border-radius: 15%;
+}
+.navaspect>div{
+	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+    list-style-type: none;
+}
+
+#himg{
+	margin-left: 0%;
+	height: 100%;
+	width: 100%;
+}
+span {
+	margin-right: 15px;
+}
+
+Strong {
+	font-size: 20px;
+}
+.clsh{
+align-items: center;
+justify-content: space-around;
+
+}
+.envoye{
+	display: block;
+}
+#energie1{
+	width: 46%;
+	float: left;
+	margin-left: 0%;
+	margin-right: 3%;
+}
+#energie2{
+	float: right ;
+	width: 46%;
+	margin-left: 3%;
+}
+#envoye{
+	text-align: center;
+}
+#imgsante{
+	width: 80%;
+	align-items: center;
+	margin-left: 10%;
+	margin-bottom:3%;
+}
+#barrelateral{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    width: 14.9%;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: 70%;
+    overflow: auto;
+    background-color:black;
+	margin-top: 3%;
+	border-radius: 2%;
+}
+.subaspect{
+	margin-left: 15px;
+	color: #e3da79;
+	padding: 1px;
+	display: block;
+}
+.subnav{
+    display: none;  
+}
+.nav:hover .subnav{
+    display: flex;  
+	flex-direction: column;
+}
+#lab1,#toggle{
+	display: none;
+}
+@media screen and (max-width:768px) {
+	#barrelateral{
+		display: none;
+	}
+	.navaspect{
+		margin-right: 7%;
+	}
+	.navaspect>div{	
+		display:block;
+		margin-left: 8%;
+	 }
+	#lab1{
+		width: 30px;
+		font-size: 40px;
+		position: relative;
+		top: 0%;
+		left: 0%;
+		display: flex;
+		color: white;
+		cursor: pointer;
+	}
+	main{
+		position:absolute;
+		top: 0%;
+	}
+	#toggle:checked + #barrelateral {
+        display: block;
+		width: 75%;
+		height: 165%;
+		z-index: 1;
+		margin-left: 15%;
+		position:absolute;
+		top: 0%;
+		background-color: rgba(0, 0, 0, 0.877);
+
+    }
+	
+	
+}
